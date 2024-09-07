@@ -1,18 +1,33 @@
-# Blog
+# Phoenix Blog App
 
-To start your Phoenix server:
+A Phoenix web app built with Elixir for managing blog posts with CRUD operations and MySQL integration.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+![Screenshot (7)](https://github.com/user-attachments/assets/7f9f5b1a-2848-4248-aac7-0f5e6436a330)
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+![Screenshot (8)](https://github.com/user-attachments/assets/352841f3-d988-41f5-a774-f1374045089d)
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Installation
 
-## Learn more
+1. **Clone the Repo**:
+    ```bash
+    git clone https://github.com/kisankumarbhagat/Phoenix-Blog-App.git
+    cd Phoenix-Blog-App
+    ```
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+2. **Install Dependencies**:
+    ```bash
+    mix deps.get
+    ```
+
+3. **Set Up Database**:
+    ```bash
+    mix ecto.create
+    mix ecto.migrate
+    ```
+
+4. **Start Server**:
+    ```bash
+    mix phx.server
+    ```
+
+5. **Visit**: `http://localhost:4000/posts`
